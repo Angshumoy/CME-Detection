@@ -1,0 +1,41 @@
+User Manual – 
+How to Use the Repository
+
+-Project Overview
+
+This repository performs Halo CME detection using solar wind parameters from Aditya-L1 (SWIS) and CACTus CME catalog data.
+
+-Prerequisites
+Python 3.8 or higher
+
+Required packages: pandas, numpy, cdflib, plotly, streamlit, etc.
+
+-Files Provided
+
+1. CME_Detection.ipynb	Performs anomaly detection and matching
+
+2. CME_App.py	Streamlit dashboard
+
+3. cactus_cme_filtered_new.csv	(Filtered CME data from CACTus)
+
+4. Link for swis_with_anomalies_and_matches_new.txt	Download link for large SWIS data
+
+User Gude-
+1. Open Link for swis_with_anomalies_and_matches_new.txt
+
+2. Click the Google Sheets/Drive link
+
+3. Download the file as CSV:
+   File > Download > Comma-separated values (.csv)
+
+Save the file as:
+
+swis_with_anomalies_and_matches_new.csv
+
+Place it in the same folder as the Python scripts (e.g. CME_Detection)
+
+
+To only see the output.
+
+Save the csv files and CME_App.py in Same folder
+change the path in the CME_App to where the csv files are saved.
