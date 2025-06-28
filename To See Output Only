@@ -1,0 +1,19 @@
+If you want to see the output only.
+
+Follow these steps.
+
+1. Create folder CME_Detect
+2. Save CME_App.py in that folder
+3. Save cactus_cme_filtered_new.csv in the same folder
+4. Open swis_with_anomalies_and_matches_new.txt, then open the link. It will be a Google Sheets. Save it as a ".csv" file in the same folder
+5. Now edit the CME_App.py code
+  In the 7th and 8th lines of the file, use the path of the CSV files according to your path (the Path in which you saved those).
+  To change the path, open the saved files. Right click and copy as path. And paste the path inside 
+    df = pd.read_csv("C:\\Users\\....\\swis_with_anomalies_and_matches_new.cs", parse_dates=['time'])
+    cme_df = pd.read_csv("C:\\Users\\....\\cactus_cme_filtered_new.csv", parse_dates=['datetime'])
+    It should look like this. And remember to use double slashes(\\) instead of single slashes (\) where required.
+
+6. Save changes. Open a New Terminal in VSCode.
+7. Write "streamlit run CME_App.py" and enter. It will redirect you to your default browser. Choose dates on which you want to observe the CMEs.
+
+If the above command doesn't work, use "python -m streamlit run CME_App.py" in the terminal.
