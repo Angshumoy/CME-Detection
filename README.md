@@ -45,13 +45,6 @@ Data Sources:
 2. https://www.sidc.be/cactus/
 
 
-
- Metric     Value 
- 
- Precision  0.91  
- Recall     1.00  
- F1-Score   0.95  
-
 Contributions & Future Plans:
 1. Enable real-time anomaly detection
 
